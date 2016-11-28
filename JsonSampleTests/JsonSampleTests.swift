@@ -22,8 +22,14 @@ class JsonSampleTests: XCTestCase {
     }
     
     func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        let array:[Product] = Json.loadJsonFile()
+        XCTAssertTrue(array.count>0, "There is at least one product")
+        
+        let product: Product = array[0]
+        XCTAssertTrue(product.images.count == 2, "The product has two images")
+        
+        XCTAssertTrue(product.price.formattedList == "£10", "The product £10 formattedList")
+        
     }
     
     func testPerformanceExample() {

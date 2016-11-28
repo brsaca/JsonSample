@@ -1,0 +1,30 @@
+{
+	"results" : [ {
+									"products" : [ {
+																		"name1" : "Nike Printed",
+																		"name2" : "Hairbands (4 Pack)",
+																		"images" : [ {
+																										"path" : "http://images.nike.com/is/image/DotCom/NIKE_API/Nike-Printed-Hairbands-4-Pack-AC3596_939.png",
+																										"alt" : "Nike Printed Hairbands (4 Pack)",
+																										"type" : "primary",
+																										"sortOrder" : 1
+																									}, {
+																										"path" : "http://images.nike.com/is/image/DotCom/NIKE_API_THN/Nike-Printed-Hairbands-4-Pack-AC3596_939.png",
+																										"alt" : "Nike Printed Hairbands (4 Pack)",
+																										"type" : "thumbnail",
+																										"sortOrder" : 1
+																								} ],
+																		 "prices" : {
+																								 "list" : "10.00",
+																								 "currentRetail" : "4.99",
+																								 "sale" : "4.99",
+																								 "currencyCode" : "GBP",
+																								 "formattedList" : "£10",
+																								 "formattedCurrentRetail" : "£4.99",
+																								 "formattedSale" : "£4.99"
+																								 },
+																		 "style" : "AC3596",
+																		 "colorCode" : "939"
+																} ]
+						 } ]
+}
