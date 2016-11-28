@@ -13,8 +13,7 @@ class ProductViewModel {
     let price: String
     let color: String
     
-    
-    private var product: Product
+    let product: Product
     
     init(product: Product){
         self.product = product

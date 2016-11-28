@@ -21,7 +21,7 @@ class ProductCell: UITableViewCell {
         self.price.text = productViewModel.price
         self.color.text = productViewModel.color
         
-        
+        self.thumbnail.sd_setImage(with: productViewModel.product.images[0].path, placeholderImage: UIImage(named: "nike"))
     }
 
 }

@@ -5,6 +5,7 @@ inhibit_all_warnings!
 def default_pods
     pod 'pop', '~> 1.0'
     pod 'SwiftyJSON'
+    pod 'SDWebImage'
 end
 
 target 'JsonSample' do

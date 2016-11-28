@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ListVC.swift
 //  JsonSample
 //
 //  Created by Brenda Saavedra on 28/11/16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSource {
+class ListVC: UIViewController,UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var tableView: UITableView!
     var products = [ProductViewModel]()
@@ -36,9 +36,9 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
     
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        let productViewModel = products[indexPath.row]
+        performSegue(withIdentifier: "detailsProduct", sender: productViewModel)
     }
-    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return products.count
@@ -50,6 +50,17 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 150
+    }
+    
+    // MARK: - Segue
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "detailsProduct" {
+            if let destination = segue.destination as? DetailsVC {
+                if let productViewModel = sender as? ProductViewModel {
+                    destination.productViewModel = productViewModel
+                }
+            }
+        }
     }
 
 }

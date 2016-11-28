@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B0E3EBC1DECD603006BAC6B /* DetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0E3EBB1DECD603006BAC6B /* DetailsVC.swift */; };
+		4B0E3EC01DECDBE8006BAC6B /* SLImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0E3EBF1DECDBE8006BAC6B /* SLImageView.swift */; };
 		4BAE52331DECAC6800221D94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAE52321DECAC6800221D94 /* AppDelegate.swift */; };
-		4BAE52351DECAC6800221D94 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAE52341DECAC6800221D94 /* ViewController.swift */; };
+		4BAE52351DECAC6800221D94 /* ListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAE52341DECAC6800221D94 /* ListVC.swift */; };
 		4BAE52381DECAC6800221D94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BAE52361DECAC6800221D94 /* Main.storyboard */; };
 		4BAE523A1DECAC6800221D94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BAE52391DECAC6800221D94 /* Assets.xcassets */; };
 		4BAE523D1DECAC6800221D94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BAE523B1DECAC6800221D94 /* LaunchScreen.storyboard */; };
@@ -47,10 +49,13 @@
 /* Begin PBXFileReference section */
 		03264484AC5C500A5D6282A3 /* Pods-JsonSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JsonSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JsonSample/Pods-JsonSample.debug.xcconfig"; sourceTree = "<group>"; };
 		25D3EEE08E8ECE81AB482C4F /* Pods_JsonSampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JsonSampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B0E3EB71DECCFFE006BAC6B /* JsonSample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JsonSample-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		4B0E3EBB1DECD603006BAC6B /* DetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsVC.swift; sourceTree = "<group>"; };
+		4B0E3EBF1DECDBE8006BAC6B /* SLImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SLImageView.swift; sourceTree = "<group>"; };
 		4B2071A05A3620AAF0D8782B /* Pods_JsonSampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JsonSampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BAE522F1DECAC6800221D94 /* JsonSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JsonSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BAE52321DECAC6800221D94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4BAE52341DECAC6800221D94 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4BAE52341DECAC6800221D94 /* ListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListVC.swift; sourceTree = "<group>"; };
 		4BAE52371DECAC6800221D94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4BAE52391DECAC6800221D94 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4BAE523C1DECAC6800221D94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -105,6 +110,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B0E3EBA1DECD5C2006BAC6B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4BAE52341DECAC6800221D94 /* ListVC.swift */,
+				4B0E3EBB1DECD603006BAC6B /* DetailsVC.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 		4BAE52261DECAC6800221D94 = {
 			isa = PBXGroup;
 			children = (
@@ -134,11 +148,12 @@
 				4BF416901DECB45A00DED1A8 /* Model */,
 				4BF416881DECB0C500DED1A8 /* View */,
 				4BAE52621DECAEBE00221D94 /* Utils */,
-				4BAE52341DECAC6800221D94 /* ViewController.swift */,
+				4B0E3EBA1DECD5C2006BAC6B /* Controllers */,
 				4BAE52321DECAC6800221D94 /* AppDelegate.swift */,
 				4BAE52361DECAC6800221D94 /* Main.storyboard */,
 				4BAE52391DECAC6800221D94 /* Assets.xcassets */,
 				4BAE523B1DECAC6800221D94 /* LaunchScreen.storyboard */,
+				4B0E3EB71DECCFFE006BAC6B /* JsonSample-Bridging-Header.h */,
 				4BF4168D1DECB10A00DED1A8 /* Resources */,
 				4BAE523E1DECAC6800221D94 /* Info.plist */,
 			);
@@ -176,6 +191,7 @@
 			children = (
 				4BF416891DECB0D600DED1A8 /* ProductCell.swift */,
 				4BF416951DECC37C00DED1A8 /* MaterialView.swift */,
+				4B0E3EBF1DECDBE8006BAC6B /* SLImageView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -307,6 +323,7 @@
 					4BAE522E1DECAC6800221D94 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 3RQAYNAD56;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 					4BAE52421DECAC6800221D94 = {
@@ -518,11 +535,13 @@
 				4BAE52611DECAEBA00221D94 /* Json.swift in Sources */,
 				4BF4168A1DECB0D600DED1A8 /* ProductCell.swift in Sources */,
 				4BF4168F1DECB45600DED1A8 /* Product.swift in Sources */,
-				4BAE52351DECAC6800221D94 /* ViewController.swift in Sources */,
+				4BAE52351DECAC6800221D94 /* ListVC.swift in Sources */,
 				4BF416991DECC5EA00DED1A8 /* ProductViewModel.swift in Sources */,
 				4BAE52331DECAC6800221D94 /* AppDelegate.swift in Sources */,
 				4BF416921DECB59000DED1A8 /* Prices.swift in Sources */,
+				4B0E3EC01DECDBE8006BAC6B /* SLImageView.swift in Sources */,
 				4BF416961DECC37C00DED1A8 /* MaterialView.swift in Sources */,
+				4B0E3EBC1DECD603006BAC6B /* DetailsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -673,11 +692,14 @@
 			baseConfigurationReference = 03264484AC5C500A5D6282A3 /* Pods-JsonSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 3RQAYNAD56;
 				INFOPLIST_FILE = JsonSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bsc.JsonSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "JsonSample-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -687,11 +709,13 @@
 			baseConfigurationReference = D282855696C129A222A7547A /* Pods-JsonSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 3RQAYNAD56;
 				INFOPLIST_FILE = JsonSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bsc.JsonSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "JsonSample-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
